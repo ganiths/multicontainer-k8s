@@ -1,6 +1,6 @@
-docker build -t ganiths/multi-client:latest -t ganiths/multi-client:$GIT_SHA ./client/Dockerfile ./client
-docker build -t ganiths/multi-server:latest -t ganiths/multi-server:$GIT_SHA ./server/Dockerfile ./server
-docker build -t ganiths/multi-worker:latest -t ganiths/multi-worker:$GIT_SHA ./worker/Dockerfile ./worker
+docker build -t ganiths/multi-client:latest -t ganiths/multi-client:$GIT_SHA -f ./client/Dockerfile ./client
+docker build -t ganiths/multi-server:latest -t ganiths/multi-server:$GIT_SHA -f ./server/Dockerfile ./server
+docker build -t ganiths/multi-worker:latest -t ganiths/multi-worker:$GIT_SHA -f ./worker/Dockerfile ./worker
 
 
 docker push ganiths/multi-client:latest
