@@ -15,4 +15,4 @@ kubectl apply -f k8s
 
 kubectl set image deployments/server-deployment server=ganiths/multi-server:$GIT_SHA
 kubectl set image deployments/client-deployment client=ganiths/multi-client:$GIT_SHA
-kubectl set image deployments/worker-deployment client=ganiths/multi-worker:$GIT_SHA
+kubectl set image deployments/worker-deployment worker=ganiths/multi-worker:$GIT_SHA
