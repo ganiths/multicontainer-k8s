@@ -10,8 +10,8 @@ metadata:
 spec:
     tls:
       - hosts:
-        - multicontainer.learnings        
-      secretName: wildcard
+          - multicontainer.learnings        
+        secretName: wildcard
     rules:
       - host: multicontainer.learnings
         http:
