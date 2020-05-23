@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: "myakscluster"
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: "myakscluster"
+    spec:
+      containers:
+        - name: "myakscluster"
+          image: "ganiths.azurecr.io/myakscluster"
+          ports:
+          - containerPort: 3000
